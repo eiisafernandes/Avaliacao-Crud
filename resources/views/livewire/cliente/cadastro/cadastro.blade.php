@@ -44,7 +44,7 @@
 
                 <div class="mb-3">
                     <label for="password">Senha</label>
-                    <input type="text" name="password" id="password" class="form-control"
+                    <input type="password" name="password" id="password" class="form-control"
                         wire:model.defer="password">
                 </div>
 
