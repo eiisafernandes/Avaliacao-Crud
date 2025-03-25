@@ -67,7 +67,18 @@ class User extends Authenticatable
 
     public function admin()
     {
-        return $this->hasOne(Cliente::class);
+        return $this->hasOne(Admin::class);
     }
+
+    //verificar se é funcionario
+    public function isFuncionario(){
+        return $this->role == self::ROLE_FUNCIONARIO;
+    }
+
+    public function funcionario()
+    {
+        return $this->hasOne(Funcionario::class);
+    }
+    
     
 }
