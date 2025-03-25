@@ -20,4 +20,4 @@ Route::get('pagina/inicial/cliente', Dashboard::class)->name('cliente.dashboard.
 
 Route::get('/aluno/pagina', function (){
     return redirect(route('cliente.dashboard.dashboard'));
-})->middleware(['auth', 'role:aluno'])->name('cliente.dashboard');
+})->middleware(['auth', 'role:cliente'])->name('cliente.dashboard');
