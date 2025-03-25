@@ -1,6 +1,6 @@
 <div class="d-flex align-items-center justify-content-center vh-100 bg-light">
     <div class="card shadow-sm p-4" style="width: 400px">
-        <h2 class="text-center mb-4">Login</h2>
+        <h2 class="text-center mb-4">Faça seu Login!</h2>
 
         @if (session()->has('error'))
             <div class="alert alert-danger">{{ session('error') }}</div>
@@ -24,6 +24,12 @@
                 @enderror
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
+
+            <div class="mt-5 center">
+                <p>Não tem uma conta?</p>
+                <a href="{{ route('cliente.cadastro') }}">Cadastre-se já!</a>
+            </div>
+
         </form>
     </div>
 
