@@ -9,7 +9,8 @@ use Livewire\Component;
 
 class Cadastro extends Component
 {
-
+    public $email;
+    public $password;
     public $nome;
     public $endereco;
     public $telefone;
